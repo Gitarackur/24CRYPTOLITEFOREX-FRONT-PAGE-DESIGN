@@ -1,0 +1,754 @@
+@media only screen and (max-width: 600px){
+
+    * {
+        padding : 0;
+        margin : 0;
+        box-sizing: border-box;
+         /* font-family: 'Happy Monkey', cursive; */
+        /* font-family: 'Spirax', cursive; */
+        /* font-family: 'Bubbler One', sans-serif; */
+        font-family: 'Bubbler One', cursive;
+    }
+    
+    body {
+        background : white;
+        color : black;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #Main_Page_Container{
+        width: 100%;
+        display: block;
+        background-color: black;
+    }
+
+    
+
+    #Desktop_Main_Header{
+        width: 100%;
+        background: #1D1E16;
+        display: flex;
+        font-size: 0.7rem;
+    }
+
+    #Desktop_Main_Header .Main_Logo{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Main_Logo img{
+        width: 100%;
+        display: block;
+        margin: auto;
+        position: relative;
+        z-index: 20;
+    }
+
+
+
+    #Desktop_Main_Header .ToggleBar{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+
+    #Desktop_Main_Header .ToggleBar .Hamburger_Toggle_b2n{
+        width: 20%;
+        height: 3rem;
+        background: #89991F;
+        background: rgba(72,155,120,0.5);
+        margin-left: 80%;
+        padding: 2%;
+       }
+    
+       .Line{
+        display: block;
+        height: 0.3rem;
+        width: 60%;
+        background: white;
+        background: #89991F;
+        border-radius: 8px;
+        transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.95s;
+        margin: auto;
+       }
+    
+       .top{
+        position: relative;
+        top: 10%;
+       }
+    
+       .middle{
+        position: relative;
+        top: 30%;
+       }
+    
+       .bottom{
+        position: relative;
+        top: 50%;
+       }
+    
+    
+    
+    .icon.close .top{
+        transform: rotate(45deg);
+        top: 40%;
+    }
+    
+    .icon.close .middle{
+        transform: rotate(-45deg);
+    }
+    
+    .icon.close .bottom{
+        transform: rotate(-45deg);
+        top: 20%;
+        
+    }
+    
+    #Desktop_Main_Header .Links_and_Search.opened{
+        /* width: 100%; */
+        height: 30rem;
+    }
+
+
+
+
+
+
+    #Desktop_Main_Header .Links_and_Search{
+        display: block;
+        width: 100%;
+        background: #1D1E16;
+        background: rgba(29,30,22,0.97);
+        /* float: right; */
+        overflow: hidden;
+        position: absolute;
+        z-index: 10;
+        font-size: 1.5rem;
+        transition: 0.1s ease-in-out;
+        height: 0em;
+       }
+    
+       #Desktop_Main_Header .Links_and_Search .cancel{
+        margin-left: 85%;
+        width: 10%;
+        height: 3rem;
+        /* border: 1px solid blue; */
+        margin-top: 5%;
+        display: block;
+       }
+    
+       #Desktop_Main_Header .Links_and_Search .cancel .fa-window-close{
+        width: 100%;
+       height: 100%;
+       display: block;
+        /* margin: auto; */
+        color: #89991F;
+        background: rgba(72,155,120,0.5);
+        font-size: 3rem;
+       }
+    
+    
+       #Desktop_Main_Header .Links_and_Search .Links{
+        width: 100%;
+        display: block;
+        /* border: 1px solid white; */
+        padding: 3%;
+       }
+    
+    
+        #Desktop_Main_Header .Links_and_Search .Links a{
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 2%;
+        text-align: center;
+       }
+    
+       #Desktop_Main_Header .Links_and_Search .Links a:hover{
+        background: #020201;
+        color: #89991F;
+       }
+    
+    
+    
+       #Desktop_Main_Header .Links_and_Search .Search{
+        width: 100%;
+        display: block;
+        /* border: 1px solid white; */
+        padding: 3%;
+       }
+    
+       #Desktop_Main_Header .Links_and_Search .Search div{
+        width: 70%;
+        display: flex;
+        border-radius: 1rem;
+        background:  rgba(72,155,120,0.3);
+        padding: 1%;
+        margin: auto;
+       }
+    
+       #Desktop_Main_Header .Links_and_Search .Search div .input{
+        border-radius: 1rem;
+        padding: 3%;
+        border: none;
+        outline: none;
+        width: 85%;
+        background: rgba(72,155,120,0.0);
+        color: white;
+        }
+    
+        #Desktop_Main_Header .Links_and_Search .Search div .input::placeholder{
+        color: white;
+        }
+    
+        #Desktop_Main_Header .Links_and_Search .Search .searchh{
+        border-radius: 50%;
+        background: white;
+        width: 10%;
+        padding: 5%;
+        display: block;
+        }
+
+
+
+
+
+    #Slide_section{
+        width: 100%;
+        display: block;
+    }
+    
+    #Slide_section #Main_Slideshow{
+        background: #3b3d32;
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+        display: block;
+        /* border: 1px solid white; */
+        position: relative;
+    }
+    
+    #Slide_section #Main_Slideshow .slides{
+        width: 100%;
+        height: inherit;
+        background: #3b3d32;
+        /* border: 1px solid white; */
+        color: white;
+        /* transition: width 2s; */
+        display: block;
+       }
+    
+    #Slide_section #Main_Slideshow .img1{
+        background:linear-gradient(to right, rgba(0,0,0,1), rgba(72,155,120,0.6)), url("../images/f5.jpg");
+        background-size: cover;
+        text-align: center;
+        }
+    
+        #Slide_section #Main_Slideshow .img1 .jumbotron,
+        #Slide_section #Main_Slideshow .img2 .jumbotron ,
+        #Slide_section #Main_Slideshow .img3 .jumbotron ,
+        #Slide_section #Main_Slideshow .img4 .jumbotron 
+        {
+            width: 80%;
+            margin: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 2%;
+            /* border: 1px solid #89991F; */
+            position: relative;
+            top: 20%;
+            text-align: center;
+        }
+    
+        #Slide_section #Main_Slideshow .img1 .jumbotron h1,
+        #Slide_section #Main_Slideshow .img2 .jumbotron h1,
+        #Slide_section #Main_Slideshow .img3 .jumbotron h1,
+        #Slide_section #Main_Slideshow .img4 .jumbotron h1
+        {
+            padding: 1%;
+        }
+    
+        #Slide_section #Main_Slideshow .img1 .jumbotron p,
+        #Slide_section #Main_Slideshow .img2 .jumbotron p,
+        #Slide_section #Main_Slideshow .img3 .jumbotron p,
+        #Slide_section #Main_Slideshow .img4 .jumbotron p
+        {
+            padding: 1%;
+        }
+    
+        #Slide_section #Main_Slideshow .img1 .jumbotron div,
+        #Slide_section #Main_Slideshow .img2 .jumbotron div,
+        #Slide_section #Main_Slideshow .img3 .jumbotron div,
+        #Slide_section #Main_Slideshow .img4 .jumbotron div
+        {
+            padding: 1%;
+            /* border: 1px solid rgba(72,155,120,1); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    
+    
+        #Slide_section #Main_Slideshow .img1 .jumbotron div a{
+            background-color: #89991F;
+            border-radius: 1rem;
+            padding: 2%;
+            text-decoration: none;
+            color: white;
+            /* border: 1px solid rgba(72,155,120,1); */
+            display: block;
+            margin: 1%;
+        }
+    
+    #Slide_section #Main_Slideshow .img2{
+        background:linear-gradient(to right, rgba(0,0,0,1), rgba(72,155,120,0.6)), url("../images/f4.jpg");
+        background-size: cover;
+        }
+    
+    #Slide_section #Main_Slideshow .img3{
+        background:linear-gradient(to right, rgba(0,0,0,1), rgba(72,155,120,0.6)), url("../images/f3.jpg");
+        background-size: cover;
+        }
+    
+    #Slide_section #Main_Slideshow .img4{
+        background:linear-gradient(to right, rgba(0,0,0,1), rgba(72,155,120,0.6)), url("../images/f2.jpg");
+        background-size: cover;
+        }
+    
+    
+    .left_arr{
+        position: absolute;
+        top: 43%;
+        left: 2%;
+        border-radius: 50%;
+        padding: 2%;
+        background: white;
+        color: rgba(72,155,120,1);
+        }
+    
+    
+    .left_arr .fa-arrow-left{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    
+    
+    .right_arr{
+        position: absolute;
+        top: 43%;
+        right: 2%;
+        border-radius: 50%;
+        padding: 2%;
+        background: white;
+        color: rgba(72,155,120,1);
+    }
+    
+    .right_arr .fa-arrow-right{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+        
+    
+    #slides_dots{
+        background: #1D1E16;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    .dots{
+        background: white;
+        border-radius: 50%;
+        width: 0.7rem;
+        height: 0.7rem;
+        margin: 0.3rem;
+        }
+    
+    
+    
+    
+    #About_us{
+        background: linear-gradient( to right, rgba(255,255,255,0.03), rgba(72,155,120,0.7)) ;
+        /* #89991F; */
+        color: white;
+        width: 100%;
+        word-wrap: break-word;
+        margin: auto;
+        margin: auto;
+        line-height: 2rem;
+        border-radius: 0rem;
+        text-align: center;
+        }
+    
+    .Abt_us_Heading{
+        padding-top: 5%;
+        font-size: 1.5rem;
+        color: #89991F;
+        text-align: center;
+        }
+    
+    #About_us p{
+        padding: 2%;
+        font-size: 1rem;
+        word-wrap: break-word;
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+        /* border: 1px solid white; */
+        }
+    
+    
+    
+    #BitcoinVideo_info{
+        /* border: 1px solid white; */
+        display: block;
+        width: 100%;
+        /* background: #3b3d32; */
+        }
+        
+          
+        
+    .BitcoinVid_info{
+        width: 100%;
+        display: block;
+        color: white;
+        border: 1px solid white;
+    }
+    
+    .BitcoinVid_info p{
+        text-align: center;
+    }
+    
+    .Bitcoin_YoutubeVid{
+        width: 100%;
+        display: block;
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .Bitcoin_YoutubeVid p{
+        text-align: center;
+    }
+    
+    .BitcoinVid_iframe{
+        display: block;
+        width: 100%;
+    }
+    
+    .BitcoinVid_iframe iframe{
+        width: 100%;
+        height: 15rem;
+        margin: auto;
+    }
+    
+    
+    #Choose_Us{
+        display: block;
+        /* background: #1D1E16; */
+        color: white;
+        background:linear-gradient(to right, rgba(0,0,0,1), rgba(137,153,31,0.4)), url("../images/f2.jpg");
+        background-size: cover;
+        /* clip-path: polygon(50% 0%, 100% 7%, 100% 100%, 0% 100%, 0% 7%); */
+    }
+    
+    .Choose_Us_Heading{
+        text-align: center;
+        font-size: 1.5rem;
+        /* border: 1px solid white; */
+        color: #89991F;
+        padding: 5%;
+       }
+    
+    .Why_Choose_Us{
+        display: block;
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    
+    
+    .Why_Choose_Us div{
+        background: #3b3d32;
+        text-align: center;
+        padding: 2%;
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+    }
+    
+    
+    .Why_Choose_Us div h1{
+        text-align: center;
+        padding: 5%;
+        word-wrap: break-word;
+    }
+    
+    .Why_Choose_Us div p{
+        text-align: center;
+        padding: 2%;
+        line-height: 2rem;
+        word-wrap: break-word;
+    }
+    
+    .Why_Choose_Us .Choose_Us_circle{
+        width: 28%;
+        height: 6rem;
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+        padding: 2%;
+        border: 1px solid white;
+    }
+    
+    .Why_Choose_Us .Choose_Us_circle div{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    
+    
+    #SiteMain_Logs_counter{
+        /* background: #1D1E16; */
+        background: #89991F;
+        padding: 2%;
+        display: block;
+        color: white;
+        text-align: center;
+        /* border: 1px solid white; */
+    }
+    
+    #SiteMain_Logs_counter div{
+        /* border: 1px solid white; */
+        padding: 2%;
+    }
+    
+    #SiteMain_Logs_counter div h1{
+        /* border: 1px solid white; */
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+
+
+
+
+#our_Investment_Plans{
+ border: 1px solid #89991F;
+ background: black;
+ padding: 2%;
+ display: block;
+ }
+
+ #our_Investment_Plans .heading{
+ /* border: 1px solid #89991F; */
+ text-align: center;
+ color: #89991F;
+ padding: 2%;
+ text-transform: capitalize;
+ font-size: 2em;
+ }
+
+ #Investment_Plans{
+ /* background: #3b3d32; */
+ display: block;
+ width: 100%;
+ }
+
+ #Investment_Plans #starter_plan{
+ padding: 0%;
+ border: 1px solid #89991F;
+ /* background: #1D1D1D; */
+ margin: 2em 0%;
+ }
+
+ #Investment_Plans #starter_plan h1{
+     background:  rgba(72,155,120,0.4);
+     padding: 2%;
+     width: 100%;
+     color: white;
+ }
+
+ #Investment_Plans #starter_plan h1 span{
+     font-size: 1.5em;
+     color: #89991F;
+ }
+
+ #Investment_Plans #starter_plan div{
+     padding: 2%;
+     /* border: 1px solid #89991F; */
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     color: white;
+ }
+
+ #Investment_Plans #starter_plan div p{
+     width: 80%;
+     display: block;
+     /* border: 1px solid white; */
+     margin:  0 5%;
+ }
+ 
+ #Investment_Plans #starter_plan div i{
+     width: 5%;
+     height: 1em;
+     display: block;
+     border: 1px solid white;
+     padding: 2%;
+     border-radius: 50%;
+ }
+
+
+
+
+    #Client_Testimonial{
+        width: 100%;
+        height: 20em;
+        background:linear-gradient(to right, rgba(0,0,0,1), rgba(72,155,120,0.6)), url("../images/f8.jpg");
+        background-size: cover;
+        background-position: center;
+        /* border: 3px solid #89991F; */
+        padding: 2%;
+        display: block;
+    }
+
+    #Client_Testimonial h1{
+        color: #89991F;
+        padding: 2%;
+        text-align: center;
+        font-size: 2em;
+        display: block;
+    }
+
+    #Client_Testimonial #Testimonial_slides{
+        width: 100%;
+        height: 82.1%;
+        overflow: hidden;
+        display: block;
+    }
+
+    #Testimonial_slides .T_slides{
+        border: 5px dashed #89991F;
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        background: black;
+        display: block;
+    }
+
+    #Testimonial_slides .T_slides div p{
+        color: white;
+        text-align: justify;
+        line-height: 2em;
+    }
+
+
+
+
+
+
+
+    #footer{
+        background: rgba(71,115,113,0.8);
+        color: white;
+        padding: 0%;
+        display: block;
+    }
+
+    .Cryptolite_Footer{
+        display: block;
+        padding: 2%;
+        width: 100%;
+    }
+
+    #footer .Cryptolite_Footer .section1{
+        /* border: 1px solid white; */
+        width: 100%;
+        display: block;
+        padding: 2%;
+    }
+
+    #footer .Cryptolite_Footer .section1 .Footer_Logo_Info{
+        line-height: 2rem;
+        width: 100%;
+        display: block;
+        text-align: justify;
+    }
+
+    #footer .Cryptolite_Footer .section1 .Footer_Logo_Info img{
+        
+    }
+
+    #footer .Cryptolite_Footer .section1 .Footer_info2{
+        margin: 2rem 0;
+        line-height: 2rem;
+        /* border: 1px solid white; */
+    }
+
+    #footer .Cryptolite_Footer .section1 .Footer_Info2 .Address_Support div{
+        line-height: 2rem;
+        display: flex;
+        width: 100%;
+        
+    }
+
+
+
+
+
+    #footer .Cryptolite_Footer .section2{
+        /* border: 1px solid white; */
+        display: block;
+        width: 100%;
+    }
+
+    #footer .Cryptolite_Footer .section2 .Footer_Links{
+        display: block;
+        width: 100%;
+        /* border: 1px solid white; */
+        padding: 2%;
+    }
+
+    #footer .Cryptolite_Footer .section2 .Footer_Links h1{
+        width: 100%;
+        padding: 2%;
+    }
+
+    #footer .Cryptolite_Footer .section2 .Footer_Links a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 2%;
+        width: 40%;
+    }
+
+    #footer .Cryptolite_Footer .section2 .Footer_Links a:hover{
+        background: #89991F;
+    }
+
+
+
+
+
+    #Copyright{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    #Copyright .h2{
+        color: #89991F;
+    }
+
+}
